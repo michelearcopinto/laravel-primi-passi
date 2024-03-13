@@ -30,10 +30,14 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('welcome', compact('data'));
+    $hi = 'Hello World';
+
+    return view('home', compact('data', 'hi'));
 });
 
 Route::get('/about', function () {
 
-    return view('about');
+    $lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut excepturi deleniti cupiditate deserunt sint reprehenderit quibusdam tempore voluptas quis, nisi id voluptatibus quaerat repellat doloremque eum eos laborum eaque.';
+
+    return view('about', compact('lorem'));
 });

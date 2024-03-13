@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-    <h1>Pagina di benvenuto</h1>
+    <h1>{{ $hi }}</h1>
 
     <ul>
         @foreach ($data as $element)
